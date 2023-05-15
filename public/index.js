@@ -1,5 +1,5 @@
 async function main() {
-
+// GET is the method of the fetch request we're sending. Because its the default value!
     let response = await fetch('http://localhost:3001/listBooks')
     let books = await response.json()
 
@@ -14,7 +14,7 @@ function renderBook(book) {
                 ${book.imageURL ? `
                     <img class="card-img-top" src="${book.imageURL}" />
                 `
-                : ``}
+            : ``}
                 <div class="card-body">
                     <h5 class="card-title">${book.title}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Available: ${book.quantity}</h6>

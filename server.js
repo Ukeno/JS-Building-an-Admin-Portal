@@ -57,8 +57,8 @@ async function main() {
             port: 3000,
             logLevel: 0,
             root: './public'
-        })
-    })
+        });
+    });
 }
 
 const DB_PATH = Path.join(__dirname, 'db.json')
